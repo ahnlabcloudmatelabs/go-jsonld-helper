@@ -10,6 +10,8 @@
 
 ![Golang](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
+[![Go Test](https://github.com/cloudmatelabs/go-jsonld-helper/actions/workflows/gotest.yml/badge.svg)](https://github.com/cloudmatelabs/go-jsonld-helper/actions/workflows/gotest.yml)
+
 </div>
 
 ## Why use this library?
