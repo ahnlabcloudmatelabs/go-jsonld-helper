@@ -188,26 +188,26 @@ func Test_READMEJsonLDTest(t *testing.T) {
 }
 
 var jsonld, _ = jsonld_helper.ParseJsonLD(givenJsonLD, nil)
-var givenJsonLD = map[string]any{
-	"@context": []any{
+var givenJsonLD = `{
+	"@context": [
 		"activitystreams.json",
-		map[string]any{
-			"schema":        "http://schema.org#",
-			"PropertyValue": "schema:PropertyValue",
-			"value":         "schema:value",
-		},
-	},
-	"as:type": "Person",
-	"@id":     "acct:juunini@snippet.cloudmt.co.kr",
-	"name":    "지상 최강의 개발자 쥬니니",
-	"attachment": []map[string]any{
 		{
-			"type":  "PropertyValue",
-			"name":  "GitHub",
-			"value": "juunini",
-		},
-	},
-}
+			"schema": "http://schema.org#",
+			"PropertyValue": "schema:PropertyValue",
+			"value": "schema:value"
+		}
+	],
+	"as:type": "Person",
+	"@id": "acct:juunini@snippet.cloudmt.co.kr",
+	"name": "지상 최강의 개발자 쥬니니",
+	"attachment": [
+		{
+			"type": "PropertyValue",
+			"name": "GitHub",
+			"value": "juunini"
+		}
+	]
+}`
 var readmeJsonLD = map[string]any{
 	"@context": []any{
 		"activitystreams.json",
